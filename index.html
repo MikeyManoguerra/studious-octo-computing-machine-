@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limited Edition Website</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
+
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  font-family: 'Sigmar One', cursive
+  }
+
+  @keyframes rotate {
+    0% {
+      transform:  translateX(-100%) rotate(0deg);
+    }
+
+    100% {
+      transform: translateX(100vw) rotate(720deg);
+    }
+  }
+
+
+  html{
+    min-height: 100vh;
+    background: linear-gradient(to top, lightsalmon, ivory);
+  }
+
+  .photo {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    animation-duration: 1.5s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .photo>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+  }
+
+  .content{
+    padding-top: 100px;
+    display: flex;
+    /* justify-content: center; */
+  }
+
+header{
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  padding-right: 25px;
+  padding-left: 25px;
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  position: relative;
+  border-bottom: 5px solid rgba(87, 255, 45, 0.5);
+  color: rgb(70, 70, 70);
+}
+
+
+
+</style>
+<header>
+  <div>
+    <h1>
+      John is a Fastball!
+    </h1>
+  </div>
+</header>
+
+<body>
+  <div class="content">
+    <div class="photo">
+      <img src="./headshot.jpg" alt="headshot">
+    </div>
+  </div>
+</body>
+
+</html>
